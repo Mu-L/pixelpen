@@ -48,6 +48,25 @@ func update_camera_zoom():
 		camera.offset = Vector2.ZERO
 
 
+func rescale_view(factor : float):
+	if factor <= 0.0 or is_equal_approx(factor, 1.0):
+		return
+	camera.position *= factor
+	camera.offset *= factor
+	camera.zoom /= factor
+	queue_redraw()
+
+
+func get_zoom_percent() -> int:
+	return roundi(camera.zoom.x * 100.0)
+
+
+func zoom_at_center(factor : float):
+	var zoom_scale = factor - 1.0
+	camera.zoom += camera.zoom * zoom_scale * 0.5
+	queue_redraw()
+
+
 func zoom(factor : float):
 	var prev_mouse_offset = camera.get_local_mouse_position()
 

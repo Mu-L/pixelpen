@@ -425,6 +425,17 @@ corner_radius_bottom_left = 2
 corner_detail = 3
 anti_aliasing = false
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42eab"]
+bg_color = Color(0.15, 0.15, 0.15, 0.88235295)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gukvu"]
 content_margin_left = 5.4
 content_margin_top = 4.5
@@ -1074,6 +1085,8 @@ Panel/styles/panel = SubResource("StyleBoxFlat_20vr3")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_1orb3")
 PanelEdit/base_type = &"Panel"
 PanelEdit/styles/panel = SubResource("StyleBoxFlat_dk1w1")
+PanelFloat/base_type = &"Panel"
+PanelFloat/styles/panel = SubResource("StyleBoxFlat_42eab")
 PopupMenu/colors/font_accelerator_color = Color(1, 1, 1, 0.35)
 PopupMenu/colors/font_color = Color(0.81, 0.81, 0.81, 1)
 PopupMenu/colors/font_disabled_color = Color(1, 1, 1, 0.35)
