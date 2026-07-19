@@ -925,13 +925,25 @@ content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 10.0
 bg_color = Color(0.194349, 0.194349, 0.194349, 1)
-border_width_top = 21
+border_width_left = 4
+border_width_top = 31
+border_width_right = 4
+border_width_bottom = 4
 border_color = Color(0.24, 0.24, 0.24, 1)
-corner_detail = 3
-expand_margin_top = 21.6
-shadow_color = Color(0, 0, 0, 0.3)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_left = 4.0
+expand_margin_top = 32.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
 shadow_size = 3
+shadow_offset = Vector2(0, 1)
 anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jp37x"]
+bg_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
 
 [resource]
 default_font = ExtResource("1_s0rww")
@@ -1211,10 +1223,12 @@ Tree/styles/title_button_pressed = SubResource("StyleBoxFlat_02ydr")
 VBoxContainer/constants/separation = 3
 VSeparator/styles/separator = SubResource("StyleBoxLine_5rg64")
 Window/colors/title_color = Color(0.81, 0.81, 0.81, 1)
-Window/constants/close_h_offset = 19
-Window/constants/close_v_offset = 18
+Window/constants/close_h_offset = 26
+Window/constants/close_v_offset = 24
 Window/constants/resize_margin = 16
-Window/constants/title_height = 21
+Window/constants/title_height = 33
 Window/font_sizes/title_font_size = 12
 Window/styles/embedded_border = SubResource("StyleBoxFlat_c1h4b")
 Window/styles/embedded_unfocused_border = SubResource("StyleBoxFlat_c1h4b")
+WindowPanel/base_type = &"Panel"
+WindowPanel/styles/panel = SubResource("StyleBoxFlat_jp37x")
